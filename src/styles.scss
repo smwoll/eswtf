@@ -1,0 +1,55 @@
+$primary-color: white;
+$bg: black;
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  overflow-x: hidden;
+}
+div {
+  padding: 0;
+}
+
+.panel {
+  position: relative;
+  min-height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  place-items: center;
+  &:nth-child(odd) {
+    background: lightblue;
+  }
+}
+
+.message {
+  flex: 1 1 100%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.left,
+.right {
+  display: block;
+  z-index: 1;
+  top: 0;
+  flex: 0 1 500px; /*  Stretching: */
+  margin: 20px;
+  overflow: hidden;
+  will-change: transform;
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}
