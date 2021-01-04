@@ -9,8 +9,12 @@ h4 {
   color: $primary-color;
   display: inline-block;
   width: fit-content;
-  font-size: clamp(2.4rem, 4vw, 6rem);
+  font-size: clamp(3.4rem, 5vw, 8rem);
   text-align: center;
+}
+
+html {
+  font-size: 1rem;
 }
 
 body {
@@ -19,9 +23,10 @@ body {
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
   font-size: 3rem;
-  font-size: clamp(1.8rem, 3vw, 5rem);
+  font-size: clamp(3rem, 3vw, 5rem);
   overflow-x: hidden;
 }
+
 div {
   padding: 0;
 }
