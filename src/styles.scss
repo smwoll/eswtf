@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+
 $primary-color: white;
 $bg: black;
-h1 {
+h1,
+h2,
+h3,
+h4 {
   color: $primary-color;
   width: fit-content;
 }
@@ -9,7 +14,7 @@ body {
   color: $primary-color;
   padding: 0;
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
   font-size: clamp(1.2rem, 3vw, 2rem);
   overflow-x: hidden;
 }
