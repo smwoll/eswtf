@@ -9,7 +9,7 @@ h4 {
   color: $primary-color;
   display: inline-block;
   width: fit-content;
-  font-size: clamp(1.4rem, 4vw, 3rem);
+  font-size: clamp(2.4rem, 4vw, 6rem);
   text-align: center;
 }
 
@@ -18,15 +18,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.8rem, 3vw, 5rem);
   overflow-x: hidden;
 }
 div {
   padding: 0;
 }
-p {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-}
+
 img {
   max-width: 100%;
 }
@@ -70,6 +68,8 @@ img {
   }
   img {
     width: 100%;
+    min-height: 300px;
+    height: auto;
   }
 }
 

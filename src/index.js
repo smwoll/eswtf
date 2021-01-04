@@ -25,7 +25,6 @@ left.forEach((left) => {
   gsap.from(left, {
     xPercent: "-150",
     opacity: "0",
-    borderRadius: "100%",
     rotate: "-360",
     scrollTrigger: {
       trigger: left,
@@ -42,7 +41,6 @@ right.forEach((right) => {
   gsap.from(right, {
     xPercent: "150",
     opacity: "0",
-    borderRadius: "100%",
     rotate: "360",
     scrollTrigger: {
       trigger: right,
@@ -63,8 +61,8 @@ gsap.utils.toArray(".color").forEach(function (elem) {
     start: "top 50%",
     end: "bottom 50%",
     onEnter: () => gsap.to("body", { backgroundColor: color }),
-    onLeave: () => gsap.to("body", { backgroundColor: "white" }),
-    onLeaveBack: () => gsap.to("body", { backgroundColor: "white" }),
+    onLeave: () => gsap.to("body", { backgroundColor: "darkred" }),
+    onLeaveBack: () => gsap.to("body", { backgroundColor: "darkred" }),
     onEnterBack: () => gsap.to("body", { backgroundColor: color }),
   });
 });
