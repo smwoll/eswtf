@@ -9,6 +9,7 @@ h4 {
   color: $primary-color;
   width: fit-content;
   font-size: clamp(1.4rem, 4vw, 3rem);
+  text-align: center;
 }
 
 body {
@@ -75,6 +76,7 @@ footer {
   min-height: 5vh;
   display: grid;
   place-items: center;
+  padding: 1rem;
 }
 
 .love {
