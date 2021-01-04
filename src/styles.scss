@@ -56,7 +56,7 @@ div {
   margin: 20px;
   overflow: hidden;
   will-change: transform;
-  @media (min-width: 900px) {
+  @media (min-device-width: 500px) {
     flex-grow: 0;
   }
   img {
