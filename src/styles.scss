@@ -51,6 +51,7 @@ img {
 .message {
   flex: 1 1 100%;
   text-align: center;
+  transition: all 0.3s;
 }
 
 .left,
@@ -76,12 +77,6 @@ footer {
   place-items: center;
 }
 
-// confetti dot
-
-.dot {
-  width: 7px;
-  height: 12px;
-  position: absolute;
-  background-color: #00ff00;
-  z-index: 2;
+.love {
+  font-size: clamp(2em, 6vw, 5em);
 }

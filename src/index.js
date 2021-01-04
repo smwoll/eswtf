@@ -66,6 +66,5 @@ gsap.utils.toArray(".color").forEach(function (elem) {
     onLeave: () => gsap.to("body", { backgroundColor: "white" }),
     onLeaveBack: () => gsap.to("body", { backgroundColor: "white" }),
     onEnterBack: () => gsap.to("body", { backgroundColor: color }),
-    markers: true,
   });
 });
