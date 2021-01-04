@@ -6,6 +6,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// entry
+gsap.from(".start p", {
+  y: 200,
+  opacity: 0,
+  delay: 0.4,
+});
+
+gsap.from(".start img", {
+  y: 200,
+  opacity: 0,
+  delay: 1,
+});
+
 // leftside item entering from left
 const left = gsap.utils.toArray(".left");
 left.forEach((left) => {

@@ -8,6 +8,7 @@ h3,
 h4 {
   color: $primary-color;
   width: fit-content;
+  font-size: clamp(1.4rem, 4vw, 3rem);
 }
 
 body {
@@ -15,11 +16,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1.4rem, 3vw, 2rem);
   overflow-x: hidden;
 }
 div {
   padding: 0;
+}
+p {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -43,7 +50,6 @@ div {
 
 .message {
   flex: 1 1 100%;
-  font-size: 2em;
   text-align: center;
 }
 
