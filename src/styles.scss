@@ -2,30 +2,37 @@ $primary-color: white;
 $bg: black;
 h1 {
   color: $primary-color;
-  background-color: $bg;
+  width: fit-content;
 }
 
 body {
+  color: $primary-color;
   padding: 0;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   overflow-x: hidden;
 }
 div {
   padding: 0;
 }
 
+.container {
+  display: block;
+  margin: auto;
+  padding: 1em;
+  max-width: 1600px;
+}
+
 .panel {
   position: relative;
-  min-height: 110vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   place-items: center;
-  &:nth-child(odd) {
-    background: lightblue;
-  }
+  align-items: center;
 }
 
 .message {
@@ -39,17 +46,30 @@ div {
   display: block;
   z-index: 1;
   top: 0;
-  flex: 0 1 500px; /*  Stretching: */
+  flex: 1 1 500px; /*  Stretching: */
   margin: 20px;
   overflow: hidden;
   will-change: transform;
+  @media (min-width: 900px) {
+    flex-grow: 0;
+  }
   img {
     width: 100%;
   }
 }
 
 footer {
-  min-height: 40vh;
+  min-height: 5vh;
   display: grid;
   place-items: center;
+}
+
+// confetti dot
+
+.dot {
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  background-color: #00ff00;
+  z-index: 2;
 }
