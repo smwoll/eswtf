@@ -1,6 +1,6 @@
 # eswtf
 
-Empty project.
+An aniversary card built with Parcel and GSAP for animation.
 
 ## Building and running on localhost
 
@@ -31,4 +31,3 @@ node dist/bundle.js
 ## Credits
 
 Made with [createapp.dev](https://createapp.dev/)
-
